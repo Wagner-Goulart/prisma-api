@@ -40,7 +40,7 @@ router.post("/", async (req, res) => {
     });
     res.status(201).send(createdUser);
   } catch (e) {
-    res.status(500).send("Erro na consulta ao banco");
+    res.status(500).send("Erro na consulta ao banco" + e);
   }
 });
 
